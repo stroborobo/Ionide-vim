@@ -92,11 +92,13 @@ syn region   fsharpUnionFields transparent matchgroup=fsharpKeyword start="\Wof\
 
 
 " errors
-syn match    fsharpBraceErr   "}"
-syn match    fsharpBrackErr   "\]"
-syn match    fsharpParenErr   ")"
-syn match    fsharpArrErr     "|]"
-syn match    fsharpCommentErr "\*)"
+" doesnt really work well, probably not needed anyways with some lsp setup
+"syn match    fsharpBraceErr   contained "}"
+"syn match    fsharpBrackErr   contained "\]"
+"syn match    fsharpParenErr   contained ")"
+"syn match    fsharpArrErr     contained "|]"
+"syn match    fsharpRecLitErr  contained "|}"
+"syn match    fsharpCommentErr contained "\*)"
 
 
 " enclosing delimiters
